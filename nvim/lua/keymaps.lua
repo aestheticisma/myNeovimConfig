@@ -32,6 +32,6 @@ vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', opts)
 -----------------
 
 -- Hint: start visual mode with the same area as the previous area and the same mode
-vim.keymap.set('v', '<', '<gv', opts)
-vim.keymap.set('v', '>', '>gv', opts)
+vim.keymap.set('v', '<S-Tab>', '<gv', opts)
+vim.keymap.set('v', '<Tab>', '>gv', opts)
 
