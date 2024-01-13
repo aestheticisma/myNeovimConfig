@@ -22,7 +22,7 @@ neovim version == v0.9.5
     * `;fh` : builtin.help_tags
 
 * tree-sitter 语法高亮
-    * zc zv 折叠与打开代码块，默认打开
+    * zc zo 折叠与打开代码块，默认打开
     * Enter 增量选择（可以不断按，不断向外扩展）
     * BackSpace 减少选择 （不断按，不断向内收缩）
     * :TSInstall "language" 安装不同语言的tree-sitter
