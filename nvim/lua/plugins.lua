@@ -66,6 +66,12 @@ return require('packer').startup(function(use)
 
         use { 'nvim-treesitter/nvim-treesitter', config = [[require('config.nvim-treesitter')]] }
 
+        use { "lukas-reineke/indent-blankline.nvim", config = [[require('config.nvim-indentblankline')]] }
+        
+        use { 'ojroques/nvim-hardline', config = [[require('config.nvim-hardline')]] }
+
+        use { 'lewis6991/gitsigns.nvim', config = [[require('config.nvim-gitsigns')]] }
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
