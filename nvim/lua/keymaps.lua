@@ -27,6 +27,13 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', opts)
 
+-- For bufferline
+vim.keymap.set('n', '<A-[>', ':BufferLineCyclePrev<CR>', opts)
+vim.keymap.set('n', '<A-]>', ':BufferLineCycleNext<CR>', opts)
+
+-- For vim-floaterm
+vim.keymap.set('n', '<C-n>', ':FloatermNew<CR>', opts)
+
 -----------------
 -- Visual mode --
 -----------------

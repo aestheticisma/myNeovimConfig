@@ -72,6 +72,23 @@ return require('packer').startup(function(use)
 
         use { 'lewis6991/gitsigns.nvim', config = [[require('config.nvim-gitsigns')]] }
 
+        use { 'HiPhish/nvim-ts-rainbow2', config = [[require('config.nvim-ts-rainbow2')]] }
+
+        use {
+          'akinsho/bufferline.nvim', tag = "*", 
+          requires = 'nvim-tree/nvim-web-devicons',
+          config = [[require('config.nvim-bufferline')]]
+        }
+    
+        use {
+          'rmagatti/goto-preview',
+          config = function()
+            require('goto-preview').setup {}
+          end
+        }
+        
+        use 'voldikss/vim-floaterm'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
